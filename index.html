@@ -1,0 +1,169 @@
+<! DOCTYPE html>
+<head>
+<title>GameBase</title>
+<style>
+body{background-image: url("C:\Users\lenovo\Desktop\GameBase\assassins.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.dropbtn {
+  background-color: red;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4f3e8e;}
+ .topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 10;
+    padding: 15px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  .show {
+  display: block;
+}
+</style>
+</head>
+<body background-image="C:\Users\lenovo\Desktop\gamebase2\assassins.jpg">
+<div style="font-family:Chiller; color:rgb(47, 0, 255); font-size:300%;">GameBase</div>
+<div style="font-family: 'Gunplay', Times, serif; font-size:100%;">-an online gaming website</div>
+<p><hr><br>
+<div class="dropdown">
+  <button class="dropbtn">Action</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+  </div></div>
+<div class="dropdown">
+  <button class="dropbtn">Arcade</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+  </div></div>
+<div class="dropdown">
+  <button class="dropbtn">Racing</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+</div></div>
+<div class="dropdown">
+  <button class="dropbtn">Sports</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+</div></div>
+<div class="dropdown">
+  <button class="dropbtn">Puzzle</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+</div></div>
+<div class="dropdown">
+  <button class="dropbtn">Multiplayer</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+</div></div>
+<div class="dropdown">
+  <button class="dropbtn">Most Popular</button>
+  <div class="dropdown-content">
+    <a href="#">Game 1</a>
+    <a href="#">Game 2</a>
+    <a href="#">Game 3</a>
+</div></div>
+ <div class="search-container" align ="right">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Language
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">English</a>
+      <a href="#">German</a>
+      <a href="#">Spanish</a>
+      <a href="#">Hindi</a>
+      <a href="#">Japanese</a>
+    </div></div>
+<script>
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+</script>
+</body>
+</html>
