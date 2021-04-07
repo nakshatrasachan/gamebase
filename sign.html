@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+      <title>User Login</title>
+      <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+    
+      <div id="login_div" class="main-div">
+        <h3>GameBase Sign In</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+    
+        <button onclick="login()">Login to Account</button>
+      </div>
+      <div id="signup_div" class="main-div">
+        <h3>Sign Up on GameBase</h3>
+        <input type="email" placeholder="Email..." id="email_field" />
+        <input type="password" placeholder="Password..." id="password_field" />
+        <button onclick= "signup()">Enter to GameBase</button>
+      </div>
+    
+      <div id="user_div" class="loggedin-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>
+      </div>
+    
+    
+    
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAwc6bcY7MyKovNJhkMgRehyWG9gPCe1h4",
+    authDomain: "gamebase-347ee.firebaseapp.com",
+    projectId: "gamebase-347ee",
+    storageBucket: "gamebase-347ee.appspot.com",
+    messagingSenderId: "933748795930",
+    appId: "1:933748795930:web:73898d0bf43e0690dbffa3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+      <script src="app.js">
+
+      </script>
+  
+    </body>
+</html>
+    

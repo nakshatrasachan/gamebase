@@ -146,9 +146,19 @@ background-size: cover;
       <a href="#">Hindi</a>
       <a href="#">Japanese</a>
     </div></div>
- 
-<button id="sign_in" style="float:right" onclick="location.href='C:/Users/lenovo/Desktop/GameBase/sign.html'">SIGN-IN</button>
-<button id="sign_up" style="float:right" onclick="location.href='C:/Users/lenovo/Desktop/GameBase/sign.html'">SIGN-UP</button>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase.js">
+    firebase.initializeApp(firebaseConfig);</script>
+    <button style="float:right" onclick="logout()">Logout</button>
+    <script>
+    function logout(){
+    
+        firebase.auth().signOut();
+        
+        }
+    </script>
+    <p id="ABC" style="text-align: right; color: red">Welcome to GameBase, You are signed in.
+</p>
+
 <div class="search-container" align ="right">
   <form action="/action_page.php">
     <input type="text" placeholder="Search.." name="search">
